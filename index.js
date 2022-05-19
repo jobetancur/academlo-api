@@ -1,6 +1,8 @@
 const express = require('express');
+var cors = require('cors')
 const app = express();
 
+app.use(cors())
 app.use(express.json());
 
 const products = [
@@ -51,12 +53,14 @@ app.get('/', (rep, res) => {
 
 app.get('/api/products', (req, res) => {
     res.send(products);
+    res.json({msg: 'This is CORS-enabled for all origins!'})
 });
 
 app.get ('/api/products/:id', (req, res) => {
     const product = products.find(element => element.id === parseInt(req.params.id));
     if (!product) return res.status(404).send('Producto no encontrado');
     else res.send(product);
+    res.json({msg: 'This is CORS-enabled for all origins!'})
 })
 
 app.post('/api/products', (req, res) => {
