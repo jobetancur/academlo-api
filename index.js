@@ -44,7 +44,9 @@ const products = [
 
     { id: 19, name: 'Academlo - Sudadera roja o negra, Logo blanco V1', price: 14.00, images: {image1: 'https://img.represent.com/uploads/7f9a4ee6f3c26e70e7252abbd8dc33de.jpeg?w=750&q=95&auto=format', image2: 'https://img.represent.com/uploads/4b3a90de1d114dcb1e0e68d6dc95aec0.jpeg?w=750&q=95&auto=format'} },
 
-    { id: 20, name: 'Academlo - Camisa blanca o gris, Logo negro V5', price: 13.00, images: {image1: 'https://img.represent.com/uploads/b5f41a80ac22de1af13c5b2ea8a9e3eb.jpeg?w=750&q=95&auto=format', image2: 'https://img.represent.com/uploads/242df51d069845570b5fd5fe72b8abac.jpeg?w=750&q=95&auto=format'} }
+    { id: 20, name: 'Academlo - Camisa blanca o gris, Logo negro V5', price: 13.00, images: {image1: 'https://img.represent.com/uploads/b5f41a80ac22de1af13c5b2ea8a9e3eb.jpeg?w=750&q=95&auto=format', image2: 'https://img.represent.com/uploads/242df51d069845570b5fd5fe72b8abac.jpeg?w=750&q=95&auto=format'} },
+
+    { id: 21, name: 'Academlo - Sudadera blanca o gris, Logo negro V2', price: 14.00, images: {image1: 'https://img.represent.com/uploads/d47881539d6c11652d97a334b0a7bd8d.jpeg?w=750&q=95&auto=format', image2: 'https://img.represent.com/uploads/78f99aa7a707e0f24763371132ab6668.jpeg?w=750&q=95&auto=format'} }
 ];
 
 app.get('/', (rep, res) => {
