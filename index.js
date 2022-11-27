@@ -49,7 +49,7 @@ const products = [
     { id: 21, name: 'Academlo - Sudadera blanca o gris, Logo negro V2', price: 14.00, images: {image1: 'https://img.represent.com/uploads/d47881539d6c11652d97a334b0a7bd8d.jpeg?w=750&q=95&auto=format', image2: 'https://img.represent.com/uploads/78f99aa7a707e0f24763371132ab6668.jpeg?w=750&q=95&auto=format'} }
 ];
 
-app.get('/', (rep, res) => {
+app.get('/', (req, res) => {
     res.send ('e-Commerce Node JS API');
 });
 
